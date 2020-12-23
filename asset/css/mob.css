@@ -1,10 +1,6 @@
 @media only screen and (max-device-width: 578px) {
   body {
-    height: 100%;
-    width: 100%;
     background-color: black;
-    background-repeat: no-repeat;
-    background-size: cover;
     color: white;
     font-family: 'Alata', sans-serif;
     text-align: center;
@@ -12,8 +8,13 @@
     margin-top: 25%;
   }
 
+  #main a {
+    text-decoration: none;
+  }
+
   #title {
     text-decoration: none;
+    font-weight: bold;
     animation-name: fadein;
     animation-duration: 15s;
   }
@@ -28,13 +29,17 @@
     }
   }
 
-  #enter {
-      background-color: transparent;
+  #go {
+    background-color: transparent;
     font-size: 25px;
     color: white;
     border: 0px solid white;
-        animation-name: fadein;
+    animation-name: fadein;
     animation-duration: 25s;
     font-style: italic;
+  }
+
+  #go:hover {
+    font-size: 30px;
   }
 }
