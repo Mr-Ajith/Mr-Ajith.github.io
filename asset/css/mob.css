@@ -9,14 +9,11 @@
     font-family: 'Alata', sans-serif;
     text-align: center;
     overflow: hidden;
-    font-size: 2rem;
-    margin-top: 20%;
-    }
+    margin-top: 25%;
+  }
 
   #title {
     text-decoration: none;
-    font-size: 3rem;
-    font-weight: bold;
     animation-name: fadein;
     animation-duration: 15s;
   }
@@ -32,16 +29,12 @@
   }
 
   #enter {
-    border-radius: 50%;
-    background-color: transparent;
-    font-size:2rem;
+      background-color: transparent;
+    font-size: 25px;
     color: white;
     border: 0px solid white;
-    box-shadow: 0px 0px 3px white;
-    animation-name: fadein;
+        animation-name: fadein;
     animation-duration: 25s;
     font-style: italic;
   }
-  
-  
 }
