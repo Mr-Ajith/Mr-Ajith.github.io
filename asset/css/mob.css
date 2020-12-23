@@ -42,4 +42,16 @@
   #go:hover {
     font-size: 30px;
   }
+
+  a:hover,
+  a:active,
+  a:focus,
+  input:hover,
+  input:active,
+  input:focus,
+  button:hover,
+  button:active,
+  button:focus {
+    outline: 0;
+  }
 }
