@@ -2,14 +2,16 @@
   body {
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(to right top, #000000, #040404, #090808, #0d0c0c, #100f0f, #100f0f, #100f0f, #100f0f, #0d0c0c, #090808, #040404, #000000);
+    background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
     font-family: 'Alata', sans-serif;
     text-align: center;
-    margin-top: 50%;
-  }
+    overflow: hidden;
+    font-size: 2rem;
+    margin-top: 20%;
+    }
 
   #title {
     text-decoration: none;
