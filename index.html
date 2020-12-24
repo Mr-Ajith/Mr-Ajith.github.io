@@ -27,13 +27,16 @@
         var targetElement2 = document.getElementById('title');
         targetElement1.className = "launch_animation";
         targetElement2.className = "fade_out";
+        setTimeout(function() {
+          window.location.href = "galaxy.html";
+        }, 3000);
+      }
     </script>
     <div id="launch">
       <button onclick="launch();" style="background-color:transparent; border:0px solid transparent;">
         <i class="fas fa-rocket" style="color:white;transform: rotate(-44deg);font-size:75px;"></i></button>
     </div>
   </div>
-
 </body>
 
 </html>
