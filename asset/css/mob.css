@@ -1,5 +1,4 @@
 @media only screen and (max-device-width: 578px) {
-
   a:hover,
   a:active,
   a:focus,
@@ -8,10 +7,7 @@
   input:focus,
   button:hover,
   button:active,
-  button:focus {
-    outline: 0;
-  }
-
+  button:focus {  outline: 0;}
   body {
     background-color: black;
     color: white;
@@ -25,11 +21,10 @@
     text-decoration: none;
   }
 
-  #title {
+  #start {
     text-decoration: none;
-    font-weight: bold;
     animation-name: fadein;
-    animation-duration: 15s;
+    animation-duration: 10s;
   }
 
   @keyframes fadein {
@@ -42,11 +37,27 @@
     }
   }
 
+  @keyframes fadeout {
+    0% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+
+  .fade_out {
+    animation-name: fadeout;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+  }
+
   #launch {
     position: absolute;
     bottom: 30px;
-    margin-left: 35%;
-    margin-right: 30%;
+    margin-left: 40%;
+    float: left;
   }
 
   .launch_animation {
@@ -65,4 +76,5 @@
       opacity: 0;
     }
   }
+  
 }

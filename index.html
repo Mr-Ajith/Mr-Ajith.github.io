@@ -13,22 +13,27 @@
   <link rel="stylesheet" href="asset/all.css">
   <script src="asset/jquerry-3.5.1.js"></script>
   <script src="asset/bootstrap-4.5.3/js/bootstrap.bundle.js"></script>
-
 </head>
+
 <body>
-  <div id="main">
-    <h1 id="title"> Welcome to my Galaxy!<h1>
-        <br><br>
+  <div id="start">
+    <div id="main">
+      <h1 id="title" style="font-weight: bold;"> Welcome to my Galaxy!<h1>
+          <br><br>
+    </div>
+    <script>
+      function launch() {
+        var targetElement1 = document.getElementById("launch");
+        var targetElement2 = document.getElementById('title');
+        targetElement1.className = "launch_animation";
+        targetElement2.className = "fade_out";
+    </script>
+    <div id="launch">
+      <button onclick="launch();" style="background-color:transparent; border:0px solid transparent;">
+        <i class="fas fa-rocket" style="color:white;transform: rotate(-44deg);font-size:75px;"></i></button>
+    </div>
   </div>
-  <script>
-    function launch() {
-      var targetElement = document.getElementById("launch");
-      targetElement.className = "launch_animation";
-    }
-  </script>
-  <div id="launch">Super div
-    <button onclick="launch();">Go</button>
-  </div>
+
 </body>
 
 </html>
