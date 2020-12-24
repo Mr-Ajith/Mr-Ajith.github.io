@@ -13,19 +13,22 @@
   <link rel="stylesheet" href="asset/all.css">
   <script src="asset/jquerry-3.5.1.js"></script>
   <script src="asset/bootstrap-4.5.3/js/bootstrap.bundle.js"></script>
-</head>
 
+</head>
 <body>
   <div id="main">
     <h1 id="title"> Welcome to my Galaxy!<h1>
         <br><br>
-        <a href="#"><button id="go">
-            <p>Lets Go <i class="fas fa-arrow-right" style="color:white; font-size:20px;"></i>
-            </p>
-          </button></a>
   </div>
-
-
+  <script>
+    function launch() {
+      var targetElement = document.getElementById("launch");
+      targetElement.className = "launch_animation";
+    }
+  </script>
+  <div id="launch">Super div
+    <button onclick="launch();">Go</button>
+  </div>
 </body>
 
 </html>
