@@ -10,16 +10,22 @@
   <link rel="stylesheet" href="asset/css/mob.css">
   <link rel="stylesheet" href="asset/css/tab.css">
   <link rel="stylesheet" href="asset/css/pc.css">
+  <link rel="stylesheet" href="asset/css/glow.css">
   <link rel="stylesheet" href="asset/all.css">
   <script src="asset/jquerry-3.5.1.js"></script>
   <script src="asset/bootstrap-4.5.3/js/bootstrap.bundle.js"></script>
 </head>
 
-<body>
+<body onunload="">
   <div id="start">
+    <div class="animation-wrapper">
+      <div class="particle particle-1"></div>
+      <div class="particle particle-2"></div>
+      <div class="particle particle-3"></div>
+      <div class="particle particle-4"></div>
+    </div>
     <div id="main">
-      <h1 id="title" style="font-weight: bold;"> Welcome to my Galaxy!<h1>
-          <br><br>
+      <h1 id="title" style="font-weight: bold;"> Welcome to my Galaxy!<h1><br><br>
     </div>
     <script>
       function launch() {
@@ -37,6 +43,7 @@
         <i class="fas fa-rocket" style="color:white;transform: rotate(-44deg);font-size:75px;"></i></button>
     </div>
   </div>
+
 </body>
 
 </html>
