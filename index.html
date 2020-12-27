@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="asset/css/pc.css">
   <link rel="stylesheet" href="asset/css/glow.css">
   <link rel="stylesheet" href="asset/all.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
   <script src="asset/jquerry-3.5.1.js"></script>
   <script src="asset/bootstrap-4.5.3/js/bootstrap.bundle.js"></script>
 </head>
@@ -25,14 +27,16 @@
       <div class="particle particle-4"></div>
     </div>
     <div id="main">
-      <h1 id="title" style="font-weight: bold;"> Welcome to my Galaxy!<h1><br><br>
+      <h1 id="title" style="font-weight: bold;"> You are ready to experience my system!<h1><br><br>
     </div>
     <script>
       function launch() {
         var targetElement1 = document.getElementById("launch");
         var targetElement2 = document.getElementById('title');
+        var foot = document.getElementById('footer');
         targetElement1.className = "launch_animation";
         targetElement2.className = "fade_out";
+        foot.className = "fade_out";
         setTimeout(function() {
           window.location.href = "galaxy.html";
         }, 3000);
@@ -40,10 +44,11 @@
     </script>
     <div id="launch">
       <button onclick="launch();" style="background-color:transparent; border:0px solid transparent;">
-        <i class="fas fa-rocket" style="color:white;transform: rotate(-44deg);font-size:75px;"></i></button>
+        <i class="fas fa-power-off" style="color:white;font-size:75px;"></i></button>
     </div>
+    <span id="footer" style="float:right; position: absolute;bottom:0;margin:1px;">
+      <small>Designed & Developed by Ajith</small></span>
   </div>
-
 </body>
 
 </html>
