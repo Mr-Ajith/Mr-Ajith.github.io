@@ -26,8 +26,8 @@ function resetGame(){
           initSpeed:.000035,
           baseSpeed:.000035,
           targetBaseSpeed:.000035,
-          incrementSpeedByTime:.0000025,
-          incrementSpeedByLevel:.000005,
+          incrementSpeedByTime:.0,
+          incrementSpeedByLevel:.0,
           distanceForSpeedUpdate:100,
           speedLastUpdate:0,
 
@@ -38,7 +38,7 @@ function resetGame(){
 
           level:1,
           levelLastUpdate:0,
-          distanceForLevelUpdate:1000,
+          distanceForLevelUpdate:0,
 
           planeDefaultHeight:100,
           planeAmpHeight:80,
@@ -109,7 +109,7 @@ function createScene() {
   aspectRatio = WIDTH / HEIGHT;
   fieldOfView = 50;
   nearPlane = .1;
-  farPlane = 10000;
+  farPlane = 1000;
   camera = new THREE.PerspectiveCamera(
     fieldOfView,
     aspectRatio,
@@ -153,14 +153,14 @@ function handleWindowResize() {
 }
 
 function handleMouseMove(event) {
-  var tx = -1 + (event.clientX / WIDTH)*2;
+  var tx =0;// -1 + (event.clientX / WIDTH)*2;
   var ty = 1 - (event.clientY / HEIGHT)*2;
   mousePos = {x:tx, y:ty};
 }
 
 function handleTouchMove(event) {
     event.preventDefault();
-    var tx = -1 + (event.touches[0].pageX / WIDTH)*2;
+    var tx = 0;//-1 + (event.touches[0].pageX / WIDTH)*2;
     var ty = 1 - (event.touches[0].pageY / HEIGHT)*2;
     mousePos = {x:tx, y:ty};
 }
