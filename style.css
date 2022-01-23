@@ -1,12 +1,14 @@
 .navbar{
-    background-color: transparent;
+    background-color: #ede7f6;
 }
 .navbar-brand{
     color: #000000;
-  
 }
 .navbar-brand:hover{
     color: #000000;
+}
+#navbar-brand-top{
+    font-weight: bold;
 }
 .card{
     margin: 10px;
