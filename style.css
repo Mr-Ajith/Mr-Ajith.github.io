@@ -1,24 +1,33 @@
+html,body{
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
 .navbar{
-    background-color: #512da8;
+    background-color: white;
 }
 .navbar-brand{
-    color: white;
+    color: black;
 }
 .navbar-brand:hover{
-    color: #ffffff;
+    color: black;
 }
 #navbar-brand-top{
     font-weight: bold;
-    color: white;
+    color: black;
 }
 .card{
     margin: 10px;
-    background-color: #512da8;
+    background: #fff;
+    box-shadow: 0 5px 20px rgb(0 0 0 / 10%);
+    border-radius: 20px;
 }
 .card-title{
     font-weight: bold;
-    color: white;
+    color: black;
 }
 .card-text{
-    color: white;
+    color: black;
 }
