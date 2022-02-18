@@ -1,5 +1,7 @@
 html,body{
     /*position:fixed;*/
+    width: 100%;
+    height: auto;
     top:0;
     bottom:0;
     left:0;
@@ -17,6 +19,9 @@ html,body{
 #navbar-brand-top{
     font-weight: bold;
     color: black;
+}
+.card-group{
+    margin: 5px;
 }
 .card{
     margin: 10px;
