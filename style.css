@@ -5,13 +5,20 @@
     color: white;
 }
 .navbar-brand:hover{
-    color: #000000;
+    color: #ffffff;
 }
 #navbar-brand-top{
     font-weight: bold;
+    color: white;
 }
 .card{
     margin: 10px;
     background-color: #512da8;
 }
-
+.card-title{
+    font-weight: bold;
+    color: white;
+}
+.card-text{
+    color: white;
+}
