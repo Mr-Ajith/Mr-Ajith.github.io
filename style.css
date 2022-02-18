@@ -1,6 +1,6 @@
 html,body{
     /*position:fixed;*/
-    min-width: 100%;
+    width: 100%;
     height: auto;
     top:0;
     bottom:0;
