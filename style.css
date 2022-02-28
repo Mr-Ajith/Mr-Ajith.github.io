@@ -36,3 +36,6 @@ html,body{
 .card-text{
     color: black;
 }
+.col{
+    margin-bottom:10px;
+}
